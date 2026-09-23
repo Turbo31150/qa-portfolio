@@ -49,5 +49,9 @@ Test fonctionnel manuel · rédaction de bugs (repro, sévérité, preuve) · **
 
 Bugs **réellement reproduits** et vérifiés manuellement. Sur les plateformes de test : je reproduis et documente moi-même ; l'outillage aide à la rédaction/automatisation, **jamais** à simuler une participation. Recherche de sécurité / bug bounty : **uniquement sur périmètre autorisé**.
 
+## 📄 Réutilisation / Licence
+
+Publié sous licence **[MIT](LICENSE)** — code et modèles librement réutilisables (attribution appréciée). Les exemples sont des artefacts de démonstration, adaptables à ton contexte.
+
 ---
 *Cibles de démo : [saucedemo.com](https://www.saucedemo.com) et [jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com) — bancs d'essai publics conçus pour la pratique QA.*
