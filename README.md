@@ -1,5 +1,7 @@
 # QA Portfolio — Manual Testing & QA Automation
 
+[![QA](https://github.com/Turbo31150/qa-portfolio/actions/workflows/qa.yml/badge.svg)](https://github.com/Turbo31150/qa-portfolio/actions/workflows/qa.yml)
+
 Portfolio de test logiciel : **rapports de bugs professionnels** + **tests automatisés exécutables** (Playwright & API). Chaque livrable est **reproductible et vérifié** — aucune donnée inventée.
 
 > Manual QA + QA Automation portfolio: professional bug reports and runnable automated tests. Every artifact is reproducible and verified — no fabricated data.
@@ -16,6 +18,10 @@ Portfolio de test logiciel : **rapports de bugs professionnels** + **tests autom
 | [`BUG_REPORT_TEMPLATE.md`](BUG_REPORT_TEMPLATE.md) | Modèle de **rapport de bug** professionnel |
 | [`BUG_REPORT_EXEMPLE.md`](BUG_REPORT_EXEMPLE.md) | Exemple **rempli et réaliste** (repro 5/5, logs, preuves) |
 | [`PITCH_QA.md`](PITCH_QA.md) | Présentation / offre de service |
+| [`test_checkout_pom.py`](test_checkout_pom.py) + [`pages.py`](pages.py) | Suite E2E en **Page Object Model** (parcours nominal + login invalide + user verrouillé) |
+| [`.github/workflows/qa.yml`](.github/workflows/qa.yml) | **CI GitHub Actions** — les tests tournent à chaque push |
+
+**Résultats locaux :** `test_checkout_pom.py` → **3 passed** · `qa_api_sample.py` → **4 passed** (7/7 verts).
 
 ## ▶️ Reproduire les tests
 
