@@ -17,6 +17,8 @@ Portfolio de test logiciel : **rapports de bugs professionnels** + **tests autom
 | [`qa_api_sample.py`](qa_api_sample.py) | Tests **API REST** (GET/POST, codes HTTP, schéma, cas 404) — 4 tests |
 | [`BUG_REPORT_TEMPLATE.md`](BUG_REPORT_TEMPLATE.md) | Modèle de **rapport de bug** professionnel |
 | [`BUG_REPORT_EXEMPLE.md`](BUG_REPORT_EXEMPLE.md) | Exemple **rempli et réaliste** (repro 5/5, logs, preuves) |
+| [`BUG_REPORT_SAUCEDEMO_PERF.md`](BUG_REPORT_SAUCEDEMO_PERF.md) | Bug **performance** reproductible — SauceDemo `performance_glitch_user` |
+| [`BUG_REPORT_SAUCEDEMO_VISUAL.md`](BUG_REPORT_SAUCEDEMO_VISUAL.md) | Bug **visuel/données** reproductible — SauceDemo `problem_user` |
 | [`PITCH_QA.md`](PITCH_QA.md) | Présentation / offre de service |
 | [`test_checkout_pom.py`](test_checkout_pom.py) + [`pages.py`](pages.py) | Suite E2E en **Page Object Model** (parcours nominal + login invalide + user verrouillé) |
 | [`.github/workflows/qa.yml`](.github/workflows/qa.yml) | **CI GitHub Actions** — les tests tournent à chaque push |
