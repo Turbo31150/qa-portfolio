@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Franck Delmas — Portfolio QA (test manuel & automatisation)</title>
+<meta name="description" content="Portfolio QA de Franck Delmas : rapports de bugs reproductibles et tests automatisés Playwright/API vérifiés. Reconversion vers l'assurance qualité logicielle.">
+<style>
+  :root{
+    --bg:#0f1420; --card:#171d2b; --card2:#1e2536; --ink:#e8ecf4; --muted:#9aa6bd;
+    --accent:#4ea1ff; --green:#38d39f; --line:#2a3346; --chip:#232c40;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:920px;margin:0 auto;padding:0 20px}
+  header{padding:56px 0 28px;border-bottom:1px solid var(--line)}
+  h1{font-size:2.1rem;margin:0 0 6px;letter-spacing:-.02em}
+  .role{color:var(--accent);font-weight:600}
+  .sub{color:var(--muted);font-size:1.02rem;margin:10px 0 18px;max-width:640px}
+  .badges img{height:22px;vertical-align:middle}
+  .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .btn{display:inline-block;background:var(--card2);border:1px solid var(--line);
+    padding:9px 15px;border-radius:9px;color:var(--ink);font-weight:600;font-size:.94rem}
+  .btn:hover{border-color:var(--accent);text-decoration:none}
+  .btn.primary{background:var(--accent);color:#08111f;border-color:var(--accent)}
+  section{padding:34px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:1.28rem;margin:0 0 16px;letter-spacing:-.01em}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .card h3{margin:0 0 6px;font-size:1.02rem}
+  .card p{margin:0;color:var(--muted);font-size:.92rem}
+  .tag{display:inline-block;background:var(--chip);color:var(--muted);border-radius:999px;
+    padding:3px 11px;margin:4px 6px 0 0;font-size:.82rem}
+  .stat{display:inline-flex;align-items:center;gap:7px;background:var(--card);
+    border:1px solid var(--line);border-radius:9px;padding:7px 13px;margin:0 8px 8px 0;font-size:.9rem}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--green);display:inline-block}
+  .note{background:var(--card);border-left:3px solid var(--green);border-radius:0 8px 8px 0;
+    padding:12px 16px;color:var(--muted);font-size:.9rem}
+  footer{padding:28px 0 50px;color:var(--muted);font-size:.86rem}
+  .en{color:var(--muted);font-style:italic;font-size:.92rem}
+  code{background:var(--card2);padding:2px 6px;border-radius:5px;font-size:.86em}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Franck Delmas</h1>
+    <div class="role">Testeur QA — test fonctionnel manuel &amp; automatisation (Playwright / API / CI)</div>
+    <p class="sub">En reconversion de l'industrie automobile vers l'assurance qualité logicielle.
+      J'apporte la rigueur, le sens du détail et la méthode de la mécanique au test logiciel.
+      Chaque livrable ici est <strong>reproductible et vérifié</strong> — aucune donnée inventée.</p>
+    <p class="en">Career-changer from the automotive industry into software QA. Reproducible,
+      evidence-backed bug reports and runnable automated tests. No fabricated data.</p>
+    <div class="badges">
+      <a href="https://github.com/Turbo31150/qa-portfolio/actions/workflows/qa.yml">
+        <img src="https://github.com/Turbo31150/qa-portfolio/actions/workflows/qa.yml/badge.svg" alt="Statut CI QA">
+      </a>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/Turbo31150/qa-portfolio">Code source (GitHub)</a>
+      <a class="btn" href="#bugs">Rapports de bugs</a>
+      <a class="btn" href="#tests">Tests automatisés</a>
+      <a class="btn" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>En bref</h2>
+    <div>
+      <span class="stat"><span class="dot"></span> CI GitHub Actions — tests à chaque push</span>
+      <span class="stat"><span class="dot"></span> 7/7 tests verts en local (3 E2E + 4 API)</span>
+      <span class="stat"><span class="dot"></span> Bugs réellement reproduits &amp; prouvés</span>
+    </div>
+    <div style="margin-top:14px">
+      <span class="tag">Test fonctionnel manuel</span>
+      <span class="tag">Rédaction de bugs (repro / sévérité / preuve)</span>
+      <span class="tag">Test exploratoire</span>
+      <span class="tag">Playwright (E2E)</span>
+      <span class="tag">Page Object Model</span>
+      <span class="tag">pytest + requests (API)</span>
+      <span class="tag">CI/CD (GitHub Actions)</span>
+      <span class="tag">Localisation FR</span>
+      <span class="tag">Web &amp; Mobile Android</span>
+    </div>
+  </section>
+
+  <section id="bugs">
+    <h2>Rapports de bugs (reproductibles)</h2>
+    <div class="grid">
+      <a class="card" href="https://github.com/Turbo31150/qa-portfolio/blob/main/BUG_REPORT_SAUCEDEMO_PERF.md">
+        <h3>Bug performance — SauceDemo</h3>
+        <p>Latence anormale sur <code>performance_glitch_user</code> : étapes numérotées, sévérité/priorité, preuve.</p></a>
+      <a class="card" href="https://github.com/Turbo31150/qa-portfolio/blob/main/BUG_REPORT_SAUCEDEMO_VISUAL.md">
+        <h3>Bug visuel / données — SauceDemo</h3>
+        <p>Anomalie d'affichage sur <code>problem_user</code>, reproduite 5/5 avec captures.</p></a>
+      <a class="card" href="https://github.com/Turbo31150/qa-portfolio/blob/main/BUG_REPORT_EXEMPLE.md">
+        <h3>Exemple de rapport rempli</h3>
+        <p>Rapport réaliste complet : repro 5/5, logs, preuves, environnement.</p></a>
+      <a class="card" href="https://github.com/Turbo31150/qa-portfolio/blob/main/BUG_REPORT_TEMPLATE.md">
+        <h3>Modèle de rapport</h3>
+        <p>Template professionnel réutilisable (structure d'un bug bien documenté).</p></a>
+    </div>
+  </section>
+
+  <section id="tests">
+    <h2>Tests automatisés (exécutables)</h2>
+    <div class="grid">
+      <a class="card" href="https://github.com/Turbo31150/qa-portfolio/blob/main/test_checkout_pom.py">
+        <h3>Suite E2E — Page Object Model</h3>
+        <p>Parcours nominal + login invalide + utilisateur verrouillé. <code>pages.py</code> = objets de page.</p></a>
+      <a class="card" href="https://github.com/Turbo31150/qa-portfolio/blob/main/qa_api_sample.py">
+        <h3>Tests API REST</h3>
+        <p>GET/POST, codes HTTP, schéma, cas 404 — 4 tests pytest + requests.</p></a>
+      <a class="card" href="https://github.com/Turbo31150/qa-portfolio/blob/main/qa_playwright_sample.py">
+        <h3>Test navigateur E2E</h3>
+        <p>Login → panier → commande, assertions, capture-preuve sur échec.</p></a>
+      <a class="card" href="https://github.com/Turbo31150/qa-portfolio/blob/main/.github/workflows/qa.yml">
+        <h3>CI GitHub Actions</h3>
+        <p>Installe Playwright + dépendances, lance les tests API et E2E à chaque push.</p></a>
+    </div>
+    <p class="note" style="margin-top:16px">Reproduire en local :
+      <code>python3 -m venv .venv &amp;&amp; source .venv/bin/activate</code> →
+      <code>pip install playwright pytest requests</code> →
+      <code>playwright install chromium</code> →
+      <code>pytest -v</code>. Cibles de démo publiques : saucedemo.com &amp; jsonplaceholder.typicode.com.</p>
+  </section>
+
+  <section id="ethique">
+    <h2>Éthique &amp; méthode</h2>
+    <p class="note">Bugs <strong>réellement reproduits</strong> et vérifiés manuellement. Sur les plateformes de
+      crowdtesting : je teste et documente <strong>moi-même</strong> ; l'outillage aide à la rédaction et à
+      l'automatisation, <strong>jamais</strong> à simuler une participation. Recherche de sécurité / bug bounty :
+      <strong>uniquement sur périmètre autorisé (in-scope)</strong>. Respect strict des CGU et de la
+      confidentialité (NDA) : aucun nom de client ou d'application testée n'est publié ici.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      GitHub : <a href="https://github.com/Turbo31150">github.com/Turbo31150</a><br>
+      Portfolio : <a href="https://github.com/Turbo31150/qa-portfolio">github.com/Turbo31150/qa-portfolio</a><br>
+      Localisation : France (fr_FR, fuseau Europe/Paris) — disponible pour cycles de test QA.
+    </p>
+  </section>
+
+  <footer>
+    Portfolio publié sous licence MIT · Artefacts de démonstration reproductibles · Dernière mise à jour : 2026.
+  </footer>
+
+</div>
+</body>
+</html>
