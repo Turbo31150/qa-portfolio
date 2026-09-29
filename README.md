@@ -21,6 +21,8 @@ Portfolio de test logiciel : **rapports de bugs professionnels** + **tests autom
 | [`BUG_REPORT_SAUCEDEMO_VISUAL.md`](BUG_REPORT_SAUCEDEMO_VISUAL.md) | Bug **visuel/données** reproductible — SauceDemo `problem_user` |
 | [`PITCH_QA.md`](PITCH_QA.md) | Présentation / offre de service |
 | [`test_checkout_pom.py`](test_checkout_pom.py) + [`pages.py`](pages.py) | Suite E2E en **Page Object Model** (parcours nominal + login invalide + user verrouillé) |
+| [`TEST_MATRIX.md`](TEST_MATRIX.md) | **Matrice des cas de test** (ID, entrée, résultat attendu, statut) dérivée du code réel |
+| [`TEST_EXECUTION_REPORT.md`](TEST_EXECUTION_REPORT.md) | **Rapport d'exécution daté** — sorties `pytest` réelles (preuve d'exécution locale) |
 | [`.github/workflows/qa.yml`](.github/workflows/qa.yml) | **CI GitHub Actions** — les tests tournent à chaque push |
 
 **Résultats locaux :** `test_checkout_pom.py` → **3 passed** · `qa_api_sample.py` → **4 passed** (7/7 verts).
